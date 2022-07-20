@@ -13,9 +13,9 @@ c++LESSWARN = \
     -Wno-null-pointer-arithmetic
 
 # Suppress CGAL warnings
-c++CGALWARN = -Wno-c++11-extensions -Wno-sometimes-uninitialized -Wno-mismatched-tags
+c++CGALWARN = -Wno-c++17-extensions -Wno-sometimes-uninitialized -Wno-mismatched-tags
 
-CC          = clang++ -std=c++11 -m64
+CC          = clang++ -std=c++17 -m64
 
 include $(RULES)/c++$(WM_COMPILE_OPTION)
 
